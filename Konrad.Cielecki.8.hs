@@ -274,7 +274,7 @@ main = checkerMain solve tests
 
 1. Najpierw jest tworzona tablica cala wypelniona liczba '0'. Kazda liczba odpowiada danej literze, (0-A,1-B,...,25-Z).
 2. Nastepnie tablica jest wypelniana("fill") elementami ze specyfikacji (!! TABLICA JEST CALA ODWROCONA, czyli element (1,1,'A') jest ostatnim elementem ostatniej listy, dopiero po znalezieniu rozwiazania taka tablica jest odwracana do pierwotnej postaci i dolaczana do listy rozwiazan!!)
-	- Kazda litera podana w specyfikacji odpowiada poszczegolnym liczba (26-A,27-B,...,51-Z). Sa one wieksze, aby mozna bylo odroznic STALA litere od tej, ktora mozna modyfikowac. (Przy porownywaniu liczb jest uzywana funkcja `mod`)
+	- Kazda litera podana w specyfikacji odpowiada poszczegolnym liczbom (26-A,27-B,...,51-Z). Sa one wieksze, aby mozna bylo odroznic STALA litere od tej, ktora mozna modyfikowac. (Przy porownywaniu liczb jest uzywana funkcja `mod`)
 3. Za pomoca funkcji "findFirst" kazdy wiersz zostaje ustawiony w taki sposob, aby wystapienia roznych liter w danym wierszu byly sobie rowne.
 4. Pozniej funkcja "solve2" sprawdza czy tak ustawiona tablica jest poprawnym rozwiazaniem zagadki (czyli cond1 - poprawnosc wierszy, cond2 - poprawnosc kolumn, cond3 - czy istnieje jeden wiersz/kolumna wypelniona cala jedna litera)
  	- Ta funkcja dziala jak petla - poki nie znajdzie poprawnego rozwiazania (jezeli przejdzie po wszystkich mozliwych rozwiazaniach, to zwraca liste pusta)
